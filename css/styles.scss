@@ -234,7 +234,12 @@ h2 {
 .adm {
     .row {
         padding-bottom: 0 !important;
+        background-image: url(../images/h3_bg.png);
+        background-repeat: repeat-x;
 
+    }
+    h3 {
+        background-image: url();
     }
     section.sec__02 {
         margin-bottom: 80px;
@@ -452,6 +457,9 @@ h3 {
     background-image: url(../images/h3_bg.png);
     background-position: center bottom;
     background-repeat: repeat-x;
+}
+h3.h3_logout {
+    padding-bottom: 8px;
 }
 .mem h3 {
     // text-align: left;
