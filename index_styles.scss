@@ -83,24 +83,40 @@ header {
     z-index: 1;
     width: 100%;
     height: 200px;
-    border-top: 10px solid $header-color;
     box-sizing: border-box;
-    padding-top: 30px;
+
 }
 
 .header__inner {
     height: 100%;
     position: relative;
-    width: 90%;
-    max-width: 600px;
     margin: 0 auto;
+
 }
-
-h1 {
-    position: relative;
+    .header__subtitle {
     width: 100%;
-    height: 100%;
-
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: $header-color;
+    padding: 3px 10px 0 0;
+    text-align: right;
+    small {
+    color: $white-color;
+    font-size: 0.8em;
+    }
+    }
+h1 {
+    position: absolute;
+    width: 90%;
+    max-width: 600px;    
+    margin: 0 auto;
+    height: calc(100% - 60px);
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%,0);
     a {
         display: block;
         transition: 0.4s;
@@ -110,7 +126,8 @@ h1 {
         background-image: url(images/index_mainlogo.png);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center bottom;
+        background-position: center top;
+
     }
 }
 
