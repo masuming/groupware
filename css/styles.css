@@ -1525,7 +1525,8 @@ body.adm h2 {
 }
 
 #adm h3 {
-  background-color: rgba(244, 244, 244, 0.9);
+  padding-bottom: 9px;
+  padding-top: 2px;
 }
 
 #adm h3.err {
