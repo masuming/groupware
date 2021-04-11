@@ -69,9 +69,10 @@ header {
   margin: 0 auto;
   background-color: rgba(244, 244, 244, 0.9);
   width: 100%;
-  height: 65px;
+  height: 85px;
   z-index: 1;
-  border-top: 10px solid #42210b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header__inner {
@@ -82,9 +83,27 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: calc(100% - 30px);
   margin: 0 auto;
   padding-top: 5px;
+}
+
+.header__subtitle {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #42210b;
+  padding: 0 10px 0 0;
+  text-align: right;
+  line-height: 1.2;
+}
+
+.header__subtitle small {
+  color: white;
+  font-size: 0.8em;
 }
 
 h1 {
