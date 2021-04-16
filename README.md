@@ -22,7 +22,7 @@ groupware for circle activities
 （https://masuming.sakura.ne.jp/groupware/index.php）<br>
 現時点で完成している機能は以下の通り。</p>
 
-＜メンバーページ＞<br>
+
 <p>＜メンバーページ＞<br>・アカウント作成（デモ限定…公式版は管理者が行う想定）<br>・メールアドレス、パスワード入力によるログイン<br>・HOMEページのビュー<br>・活動予定カレンダー閲覧<br>・MY PAGEから個人情報変更</p>
 
 ＜管理ページ＞<br>・メンバーの新規登録（パスワード暗号化）<br>・登録メンバー一覧<br>・活動予定入力<br>・活動室の登録</p>
