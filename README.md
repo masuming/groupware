@@ -28,7 +28,7 @@ groupware for circle activities
 
 ＜管理ページ＞<br>・メンバーの新規登録（パスワード暗号化）<br>・登録メンバー一覧<br>・活動予定入力<br>・活動室の登録</p>
 <br>
-<img href="https://masuming.ivory.ne.jp/wp-content/uploads/2021/03/work_groupware_01-1536x729.png">
+![work_groupware_01](https://user-images.githubusercontent.com/70561410/115045071-217c8080-9f11-11eb-835e-fedbc1fb7bbc.png)
 
 
 
