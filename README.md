@@ -28,7 +28,8 @@ groupware for circle activities
 
 ＜管理ページ＞<br>・メンバーの新規登録（パスワード暗号化）<br>・登録メンバー一覧<br>・活動予定入力<br>・活動室の登録</p>
 <br>
-![work_groupware_01](https://user-images.githubusercontent.com/70561410/115045071-217c8080-9f11-11eb-835e-fedbc1fb7bbc.png)
+
+![gw_top](https://user-images.githubusercontent.com/70561410/115045685-b54e4c80-9f11-11eb-8d4c-dc424c80c404.png)
 
 
 
