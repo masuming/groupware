@@ -15,7 +15,7 @@ groupware for circle activities
 
 
 【工期／要員／環境】<br>
-<p>工期：3月22日(月)～4月30日(金)予定<br>要員：1人<br>使用言語：HTML/SCSS/JavaScript/PHP<br>データベース：MySQL<br></p>
+<p>工期：3月22日(月)～5月14日(金)予定<br>要員：1人<br>使用言語：HTML/SCSS/JavaScript/PHP<br>データベース：MySQL<br></p>
 <br>
 
 【進捗状況】（2021/04/16時点）<br>
