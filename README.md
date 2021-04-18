@@ -21,8 +21,8 @@ groupware for circle activities
 【進捗状況】（2021/04/16時点）<br>
 <p>ローカル環境(xampp)での開発と共に、デモサイトを一部オンライン公開しています。<br>
 （https://masuming.sakura.ne.jp/groupware/index.php）<br>
-  →ログインid：user@xx.xxx／pw：passmima<br><br><br>
-現時点で完成している機能は以下「システム開発進捗状況」につづっております。</p>
+  →ログインid：user@xx.xxx／pw：passmima</p><br><br><br>
+現時点で完成している機能は以下「システム開発進捗状況」につづっております。<br>
 https://masuming.sakura.ne.jp/groupware/groupware_progress_report.pdf　
 <br><br>
 
