@@ -2,8 +2,8 @@
 groupware for circle activities
 
 <p>グループウェアを開発中です。</p>
-
-<p>スケジュール管理や会計処理など、サークル運営に必要なタスクの自動化・透明化を図ります。</p>
+<p>ターゲットはサークル活動。<br>
+スケジュール管理や会計処理など、サークル運営に必要なタスクの自動化・透明化を図ります。</p>
 <br>
 
 
@@ -15,20 +15,18 @@ groupware for circle activities
 
 
 【工期／要員／環境】<br>
-<p>工期：3月22日(月)～4月30日(金)予定<br>要員：1人<br>使用言語：HTML/SCSS/JavaScript/PHP<br>データベース：MySQL<br></p>
+<p>工期：3月22日(月)～5月14日(金)予定<br>要員：1人<br>使用言語：HTML/SCSS/JavaScript/PHP<br>データベース：MySQL<br></p>
 <br>
 
 【進捗状況】（2021/04/16時点）<br>
 <p>ローカル環境(xampp)での開発と共に、デモサイトを一部オンライン公開しています。<br>
 （https://masuming.sakura.ne.jp/groupware/index.php）<br>
-  →ログインid：user@xx.xxx／pw：passmima<br>
-現時点で完成している機能は以下の通り。</p>
+  →ログインid：user@xx.xxx／pw：passmima</p>
+現時点で完成している機能は以下「システム開発進捗状況」につづっております。<br>
+https://masuming.sakura.ne.jp/groupware/groupware_progress_report.pdf　
+<br><br>
 
 
-<p>＜メンバーページ＞<br>・アカウント作成（デモ限定…公式版は管理者が行う想定）<br>・メールアドレス、パスワード入力によるログイン<br>・HOMEページのビュー<br>・活動予定カレンダー閲覧<br>・MY PAGEから個人情報変更</p>
-
-＜管理ページ＞<br>・メンバーの新規登録（パスワード暗号化）<br>・登録メンバー一覧<br>・活動予定入力<br>・活動室の登録</p>
-<br>
 
 ![gw_top](https://user-images.githubusercontent.com/70561410/115045685-b54e4c80-9f11-11eb-8d4c-dc424c80c404.png)
 
