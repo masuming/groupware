@@ -125,7 +125,7 @@ h1 {
         height: 100%;
         position: relative;
         width: 100%;
-        background-image: url(images/index_mainlogo.png);
+        background-image: url(images/index_mainlogo.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center top;
@@ -174,6 +174,12 @@ input {
     font-family: 'Heebo', 'Noto Sans JP', sans-serif;
     color: #464442;
     margin-bottom: 0; 
+    &:focus {
+        outline:0;  
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 0px 8px $primary-color;
+    }
     }    
     [type=submit]  {
         margin-top: 10px;
