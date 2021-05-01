@@ -18,7 +18,7 @@ groupware for circle activities
 <p>工期：3月22日(月)～5月14日(金)予定<br>要員：1人<br>使用言語：HTML/SCSS/JavaScript/PHP<br>データベース：MySQL<br></p>
 <br>
 
-【進捗状況】（2021/04/16時点）<br>
+【進捗状況】（2021/05/01時点）<br>
 <p>ローカル環境(xampp)での開発と共に、デモサイトを一部オンライン公開しています。<br>
 （https://masuming.sakura.ne.jp/groupware/index.php）<br>
   →ログインid：kanri@aa.aaa／pw：guanli（管理者権限）<br>
