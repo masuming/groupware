@@ -1,7 +1,7 @@
 # groupware
 groupware for circle activities
 
-<p>グループウェアを開発中です。</p>
+![gw_top](https://user-images.githubusercontent.com/70561410/115045685-b54e4c80-9f11-11eb-8d4c-dc424c80c404.png)<br><br><p>グループウェアを開発中です。</p>
 <p>ターゲットはサークル活動。<br>
 スケジュール管理や会計処理など、サークル運営に必要なタスクの自動化・透明化を図ります。</p>
 <br>
@@ -29,7 +29,7 @@ https://masuming.sakura.ne.jp/groupware/groupware_progress_report.pdf　
 
 
 
-![gw_top](https://user-images.githubusercontent.com/70561410/115045685-b54e4c80-9f11-11eb-8d4c-dc424c80c404.png)
+
 
 
 
