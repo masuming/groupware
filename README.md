@@ -23,7 +23,10 @@ groupware for circle activities
 （https://masuming.sakura.ne.jp/groupware/index.php）<br>
   →ログインid：kanri@aa.aaa／pw：guanli（管理者権限）<br>
   →ログインid：user@xx.xxx／pw：passmima（一般ユーザー権限）</p>
-![admin](https://user-images.githubusercontent.com/70561410/116768224-ebdaaa00-aa6f-11eb-82b9-78394274bf37.png)<br><br>
+  
+![admin](https://user-images.githubusercontent.com/70561410/116768224-ebdaaa00-aa6f-11eb-82b9-78394274bf37.png)
+
+<br>
 現時点で完成している機能は以下「システム開発進捗状況」につづっております。<br>
 https://masuming.sakura.ne.jp/groupware/groupware_progress_report.pdf　
 <br><br>
