@@ -1,0 +1,121 @@
+/*////////////////////////////////////////////
+// admin room regist
+////////////////////////////////////////////*/
+#adm_room,
+#room_kanryo {
+    h4 {
+        color: $text-color;
+        font-size: 1em;
+    }
+
+    section.sec__02 {
+        margin: 0 auto 30px;
+        width: calc(100% - 100px);
+        max-width: 500px;
+
+    }
+
+    form {
+        margin-bottom: 50px;
+
+        select[name=place] {
+            padding-right: 30px;
+        }
+    }
+
+}
+
+#adm_room {
+    .sec__02 {
+        max-width: 600px !important;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+    .col {
+        margin-bottom: 50px;
+
+    }
+
+    form {
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+
+    table {
+        tr:not(:first-child) td:nth-child(3) {
+            padding-right: 15px;
+            text-align: right;
+        }
+
+        tr td {
+            padding: 2px 10px;
+        }
+
+        tr:not(:first-child) td:not(:last-child) {
+            text-align: left;
+        }
+    }
+
+    .form__box {
+        padding: 15px 20px 45px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        background-color: $grayrgba-color;
+        border-radius: 6px;
+        text-align: center;
+
+        h4 {
+            background-image: url();
+            border-bottom: 2px dashed $white-color;
+            padding-bottom: 10px;
+        }
+
+        dl {
+            display: flex;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 50px;
+            }
+        }
+        dl dt {
+            width: 80px;
+            white-space: nowrap;
+            text-align: right;
+            padding-left: 30px;
+            font-weight: 600;
+        }
+
+        dl dd {
+            margin-right: 20px;
+
+            input:not(:first-child) {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    input[type=submit] {
+        padding: 4px 15px;
+        left: auto;
+        transform: translate(0);
+
+        &::-webkit-input-placeholder {
+            font-weight: normal;
+        }
+
+        &:-moz-placeholder {
+            font-weight: normal;
+        }
+
+        &::-moz-placeholder {
+            font-weight: normal;
+        }
+
+        &:-ms-input-placeholder {
+            font-weight: normal;
+        }
+    }
+}
