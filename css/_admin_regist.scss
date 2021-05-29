@@ -1,0 +1,42 @@
+/*////////////////////////////////////////////
+// admin member regist
+////////////////////////////////////////////*/
+#member {
+    h4 {
+        font-size: 1em;
+        color: $text-color;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 50px auto;
+        position: relative;
+        dl {
+            display: flex;
+            margin-bottom: 15px;
+            dt {
+                font-weight: 600;
+                width: 120px;
+            }
+            input[type=radio] {
+                margin-right: 3px;
+                &:not(:first-of-type) {
+                    margin-left: 15px;
+                }
+            }
+        }
+        input[type=submit] {
+            margin-top: 50px;
+            position: relative;
+            @include align-center;
+        }
+    }
+
+    .col {
+        max-width: 500px;
+        margin: 50px auto;
+    }
+}
+
+
+
