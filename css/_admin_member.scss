@@ -1,0 +1,137 @@
+/*////////////////////////////////////////////
+// admin member list
+////////////////////////////////////////////*/
+#mem_list {
+
+    h4 {
+        margin-bottom: 15px;
+        padding: 10px 0;
+        font-size: 1.1em;
+        padding-top: 10px;
+        border-bottom: 2px dashed $white-color;
+        background-image: url();
+    }
+
+    .row {
+        border-radius: 0 0 10px 10px;
+        padding-top: 7px;
+
+        @include bp_small {
+            display: block;
+        }
+
+    }
+
+    .sec__02 {
+        width: calc(100% - 40px);
+        background-color: $grayrgba-color;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 8px;
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
+    }
+
+    .col {
+
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:1111px) {
+            &:after {
+                width: calc((100% / 3) - 30px);
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            &:after {
+                width: calc((100% / 2) - 30px);
+            }
+        }
+
+        @media screen and (max-width:567px) {
+            width: 90%;
+            margin: 0 auto 30px;
+        }
+    }
+
+    dl {
+        margin-bottom: 20px;
+        position: relative;
+        background-color: $white-color;
+        border-radius: 6px;
+        padding: 10px 15px;
+        width: calc(100% / 6);
+
+        &:not(:nth-child(6n)) {
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width:1111px) {
+            width: calc((100% / 3) - 30px);
+
+            &:not(:nth-child(4n)) {
+                margin-right: 0;
+            }
+
+            &:not(:nth-child(3n)) {
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            width: calc((100% / 2) - 30px);
+
+            &:not(:nth-child(3n)) {
+                margin-right: 0;
+            }
+
+            &:not(:nth-child(2n)) {
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (max-width:567px) {
+            width: 100%;
+            max-width: 250px;
+
+            &:not(:nth-child(2n)) {
+                margin-right: 0;
+            }
+
+        }
+
+    }
+
+    dl dt {
+        position: relative;
+        overflow: hidden;
+    }
+
+    dl dt img {
+        height: 80px;
+        @include align-center;
+        position: relative;
+    }
+
+    dl dd {
+        text-align: center;
+    }
+
+    dl dd p {
+        font-size: 1.1em;
+    }
+
+    dl dd p:first-child {
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+
