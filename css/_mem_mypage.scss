@@ -1,0 +1,282 @@
+/*////////////////////////////////////////////
+// mem mypage
+////////////////////////////////////////////*/
+.mypage {
+    h3 {
+        position: relative;
+    }
+
+    h4 {
+        margin-bottom: 30px;
+
+    }
+
+    .mem__type {
+        position: absolute;
+        font-weight: normal;
+        top: 3px;
+        right: 0;
+        font-size: 0.8em;
+        padding: 1px 6px;
+        background-color: $secandarya-color;
+        border-radius: 5px;
+        color: $whitergba-color;
+    }
+
+    .mem__myprofile__inner {
+        position: relative;
+        padding: 0 10px 30px;
+        width: 90%;
+        margin: 0 auto 100px;
+
+        figure {
+            box-shadow: 1px 1px 3px $shadow-color;
+            margin: 50px auto 15px;
+            width: 240px;
+        }
+
+        .mem__myprofile__box {
+            p:nth-of-type(1) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .mem__myprofile__inner dl {
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mem__myprofile__inner dt.ptitle {
+        font-weight: bold;
+        position: relative;
+        margin-right: 20px;
+
+        &:after {
+            content: ":";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% + 10px);
+            text-align: right;
+        }
+    }
+
+    input[type=radio]:not(:first-child) {
+        margin-left: 15px;
+    }
+
+    input[type=file] {
+        border: none;
+        padding-bottom: 20px;
+
+    }
+
+    .buttons {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+        button:nth-child(1) {
+            margin-right: 10px;
+        }
+
+
+    }
+}
+
+#mypage {
+    .mem__myprofile__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mem__myprofile__box {
+        width: calc(100% - 280px);
+        padding-top: 20px;
+    }
+
+    figure.avatar {
+        margin: 0 50px 30px 0;
+    }
+
+    .ptitle {
+        width: 80px;
+    }
+}
+
+#mypage_henko,
+#mempass_henko_kanryo,
+#avatar_henko {
+    .mem__myprofile__inner {
+        padding-top: 30px;
+        &:nth-of-type(1) dl {
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .mem__myprofile__box {
+            position: relative;
+
+
+            &:nth-child(1) {
+
+                form dl dt.ptitle {
+                    white-space: nowrap;
+                    padding-left: 17px;
+
+                }
+
+                input[type=submit] {
+                    margin-bottom: 30px;
+                }
+            }     
+
+            input[type=submit] {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                cursor: pointer;
+                transition: 0.2s;
+
+                &:hover {
+                    @include btn-hover;
+                }
+            }
+
+        }
+
+        &:nth-of-type(2) {
+            padding-bottom: 0;
+
+        }
+    }
+
+
+    h4 {
+
+        margin-bottom: 20px;
+
+    }
+}
+
+#mypage_henko {
+    .mem__myprofile__box {
+        &:nth-of-type(1) form:nth-of-type(4) {
+            dl {
+                display: block;
+            }
+
+            dl dt {
+                width: 140px;
+            }
+
+            dl dd {
+                margin: 0 auto 30px;
+            }
+        }
+    }
+
+    .avatar__dd {
+        position: relative;
+        margin-bottom: 30px;
+        width: 325px;
+    }
+
+    input[type=submit] {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    input[type=file] {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .avatar__dd input[type=submit] {
+        position: absolute !important;
+        right: 0 !important;
+    }
+
+}
+
+#mypage_henko,
+#avatar_henko,
+#mempass_henko_kanryo {
+    .mem__myprofile__inner {
+        display: block;
+
+        &:nth-of-type(1) form dl {
+            border: 1px dashed $border2-color;
+            border-radius: 4px;
+            padding-top: 10px !important;
+            padding-bottom: 10px;
+            margin-bottom: 25px !important;
+        }
+    }
+
+    .mem__myprofile__box {
+        width: 100%;
+
+    }
+
+    input[type=submit] {
+        position: relative !important;
+        margin-left: 20px;
+        margin-bottom: 0 !important;
+    }
+
+    figure {
+        margin-top: 45px;
+    }
+}
+
+#avatar_henko {
+    h4 {
+        text-align: center;
+    }
+
+    figure {
+        margin-bottom: 100px;
+    }
+
+    .buttons {
+        position: relative;
+        right: auto;
+        bottom: auto;
+
+    }
+
+    .avatar__kanryo {
+        margin-bottom: 80px !important;
+    }
+}
+
+#mempass_henko_kanryo {
+    .mem main .row {
+        padding-bottom: 0;
+    }
+
+    h4 {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .buttons {
+        position: relative;
+        margin: 0 auto;
+        right: auto;
+    }
+}
+
+#mypage_mail_henko,
+#mypage_name_henko,
+#mypage_py_henko,
+#mypage_deli_henko {
+    .mem__myprofile__inner dl {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+}
