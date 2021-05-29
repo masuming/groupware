@@ -34,11 +34,12 @@ include("../session_start.php");
 
             <div class="col">       
                 
-                <p class="textcenter mb20">入力月を選択してください</p>
+                
 
 
                 
             <?php if(isset($_SESSION['mail']) && $_SESSION['type']==3): ?>
+                <p class="textcenter mb20">入力月を選択してください</p>
                 <form action="meeting_touroku.php" method="post">
                 <?php
                     date_default_timezone_set('Asia/Tokyo');
@@ -47,7 +48,7 @@ include("../session_start.php");
 
                     ?>
 
-                    <dl>
+                    <dl class="ym__select">
                     <dt>
                     <select name="year" id="year">
                         <?php
@@ -63,10 +64,12 @@ include("../session_start.php");
                                 endswitch;
                             for($i=0;$i<2;$i++):
                                 if($i==$_POST["year"]):
-                                echo "<option value='",$_POST["year"],"' selected>",$yy,"年</option>";
-                                else:
                                     echo "<option value='",$i,"' selected>",$yy,"年</option>";
-                                endif;
+                                    elseif($i<$_POST["year"]):
+                                        echo "<option value='",$i,"'>",$yy-$_POST["year"],"年</option>";
+                                    else:
+                                        echo "<option value='",$i,"'>",$_POST["year"]-$yy,"年</option>";
+                                    endif;
                             endfor;
 
                         else: ?>
@@ -92,7 +95,7 @@ include("../session_start.php");
                         endfor; 
                     else:
                         for($j=1;$j<=12;$j++):
-                        if($j==$month+1):
+                        if($j==$month):
                         echo "<option value='",$j,"' selected>",$j,"月</option>";
                         else:
                         echo "<option value='",$j,"'>",$j,"月</option>";     
@@ -112,6 +115,8 @@ include("../session_start.php");
                     <?php
                     $errors=array();
 
+
+// フォームから年月を選んだときの処理
                     if($_SERVER["REQUEST_METHOD"]==="POST"):
 
                         $y=$_POST["year"];
@@ -123,30 +128,58 @@ include("../session_start.php");
                             $year=date('Y', strtotime('+1 year'));
                             break;
                         }
-                        $m=$_POST["month"];
+                        $month=$_POST["month"];
+
+    // 年月選択前のデフォルトの年月を取得                        
+                    else:
+                        date_default_timezone_set('Asia/Tokyo');
+                        $year=date("Y");
+                        $month=date("n");
+                        //$date=date("date");
+                    endif;
 
                         $day=date("j");
-                        $lastdate=date("t",strtotime("$year-$m-1")); 
-                        $firstday=date("w",strtotime("$year-$m-1"));
+                        $lastdate=date("t",strtotime("$year-$month-1")); 
+                        $firstday=date("w",strtotime("$year-$month-1"));
                         $firstday=(int)$firstday;
                         $thisdate=1-$firstday;
                         $lastdate=(int)$lastdate;
+                        $day=date("day");
+                        
 
 
 
                         echo "<h4>",$year,"年";
-                        echo $m,"月</h4>";
+                        echo $month,"月</h4>";
 
                        
                         echo "<table class='select__calen'><tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>";
 
+                        include("../try_catch.php");
+                        $stmt=$pdo->prepare("SELECT * FROM `meeting` WHERE year=$year and month=$month");
+                        $stmt->execute();
+                        $ymd=array();
+                        while($result=$stmt->fetch(PDO::FETCH_ASSOC)):
+                            $yY=$result["year"];
+                            $mM=$result["month"];
+                            $dD=$result["date"];
+                            $ymd[]+=$yY.$mM.$dD;
+                        endwhile;
+                        
+
+
                         while(1):
                             echo "<tr>";
+                            
                             for($j=0;$j<7;$j++):
+                                $thisymd=$year.$month.$thisdate;
                                 if($thisdate<1 || $thisdate>$lastdate):
                                     echo "<td></td>";
+                                elseif(in_array($thisymd,$ymd)):
+                                        echo "<td class='sche__input have'><form action='meeting_input.php?$year-$month-$thisdate' method='post'><input type='hidden' name='yy' value='$year'><input type='hidden' name='mm' value='$month'><input type='hidden' name='dd' value='$thisdate'><input type='submit' value='$thisdate'></form></td>";
+
                                 else:
-                                    echo "<td class='sche__input'><form action='meeting_input.php?$year-$m-$thisdate' method='post'><input type='hidden' name='yy' value='$year'><input type='hidden' name='mm' value='$m'><input type='hidden' name='dd' value='$thisdate'><input type='submit' value='$thisdate'></form></td>";
+                                    echo "<td class='sche__input'><form action='meeting_input.php?$year-$month-$thisdate' method='post'><input type='hidden' name='yy' value='$year'><input type='hidden' name='mm' value='$month'><input type='hidden' name='dd' value='$thisdate'><input type='submit' value='$thisdate'></form></td>";
                                     
                                 endif;
                                 $thisdate++;
@@ -166,7 +199,7 @@ include("../session_start.php");
             
 
 
-                    endif;
+                    
 
 
 
