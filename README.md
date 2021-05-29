@@ -9,7 +9,7 @@ groupware for circle activities
 
 
 【仕様】<br>
-<p>＜メンバーページ＞<br>・HOME･･･要チェックの投稿一覧や各画面へのリンク<br>・NEWS･･･投稿ページ<br>・SCHEDULE･･･活動予定のカレンダー<br>・ADDRESS･･･アドレス帳<br>・ACCOUNT･･･必要経費、請求、支払い情報<br>・TALK･･･チャット<br>・MYPAGE･･･基本登録情報の変更</p>
+<p>＜メンバーページ＞<br>・HOME･･･要チェックの投稿一覧や各画面へのリンク<br>・NEWS･･･投稿ページ<br>・SCHEDULE･･･活動予定のカレンダー<br>・ADDRESS･･･アドレス帳<br>・ACCOUNT･･･必要経費、請求、支払い情報<br>・MYPAGE･･･基本登録情報の変更</p>
 ＜管理者ページ＞<br>・メンバーの新規登録（パスワード暗号化）<br>・スケジュールの更新<br>・会計報告、メンバー毎の経費精算、繰越機能<br>・活動場所の管理<br>・活動前日にリマインドメール送信</p>
 <br>
 
@@ -18,7 +18,7 @@ groupware for circle activities
 <p>工期：3月22日(月)～5月14日(金)予定<br>要員：1人<br>使用言語：HTML/SCSS/JavaScript/PHP<br>データベース：MySQL<br></p>
 <br>
 
-【進捗状況】（2021/05/01時点）<br>
+【進捗状況】（2021/05/14時点）<br>
 <p>ローカル環境(xampp)での開発と共に、デモサイトを一部オンライン公開しています。<br>
 （https://masuming.sakura.ne.jp/groupware/index.php）<br>
   →ログインid：kanri@aa.aaa／pw：guanli（管理者権限）<br>
