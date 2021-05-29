@@ -1,0 +1,65 @@
+/*////////////////////////////////////////////
+// mem about
+////////////////////////////////////////////*/
+body.about {
+    h3 {
+        margin-bottom: 50px;
+    }
+    .row {
+        background-image: url(../images/h3_bg.png) !important;
+        background-position: top left !important;
+        background-repeat: repeat-x !important;
+        background-size: auto !important;
+    }
+    figure {
+        background-image: url(../images/about_heroimg.png);
+        width: 90%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 300px;
+        margin: 0 auto 50px;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
+    article {
+        width: 90%;
+        margin: 0 auto 120px;
+        p {
+            margin-bottom: 20px;
+        }
+        .p-text {
+            color: $primary-color;
+        }
+        dl {
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 30px;
+            }
+        }
+        dt {
+            font-weight: 600;
+            color: $header-color;
+        }
+        dd {
+            padding-left: 20px;
+        }
+        &:nth-of-type(2) p:nth-of-type(1) {
+            margin-bottom: 0;
+        }
+    }
+    article p small {
+        color: $secandary-color;
+        padding-bottom: -10px;
+    }
+    .buttons {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        button a {
+            &:hover {
+                border: 1px solid $gray-dark-color;
+            }
+        }
+    }
+}
