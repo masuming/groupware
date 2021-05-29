@@ -1,0 +1,79 @@
+/*////////////////////////////////////////////
+// mixin
+////////////////////////////////////////////*/
+@mixin bp_xxl {
+    @media screen and (max-width:1400px) {
+        @content;
+    }
+}
+
+@mixin bp_xl {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+
+@mixin bp_large {
+    @media screen and (max-width:1024px) {
+        @content;
+    }
+}
+
+@mixin bp_mid {
+    @media screen and (max-width:800px) {
+        @content;
+    }
+}
+
+@mixin bp_small {
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+
+@mixin bp_xsmall {
+    @media screen and (max-width:400px) {
+        @content;
+    }
+}
+
+@mixin align-center {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@mixin centering {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+@mixin btn-hover {
+    background-color: $btn-hover-color;
+    color: $white-color;
+}
+
+@mixin double-btn-hover {
+    background-color: $btn-hover-color;
+    color: $white-color;
+    border: 3px double $white-color;
+}
+
+@mixin butn-hover {
+    background-color: $btn-hover-color;
+    color: $white-color;
+    border: 1px solid $white-color;
+}
+
+@mixin nav-arrow {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 2px);
+    height: calc(100% + 13px);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url(../images/nav__point.png);
+}
