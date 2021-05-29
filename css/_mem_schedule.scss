@@ -1,0 +1,27 @@
+/*////////////////////////////////////////////
+// mem schedule
+////////////////////////////////////////////*/
+#mem_schedule {
+    .fas {
+        margin-right: 5px;
+    }
+}
+
+#sch_detail {
+    section.sec__02 .col {
+        width: calc(100% - 200px);
+        max-width: 500px;
+        margin: 0 auto;
+        background-image: url(../images/lesson.png);
+        background-repeat: no-repeat;
+        background-position: right -50px bottom -20px;
+        background-size: 70%;
+        dl {
+            display: flex;
+            dt {
+                width: 80px;
+                font-weight: 600;
+            }
+        }
+    }
+}
