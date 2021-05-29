@@ -1,0 +1,51 @@
+/*////////////////////////////////////////////
+// admin top page
+////////////////////////////////////////////*/
+#adm {
+    h3 {
+        padding-bottom: 9px;
+        padding-top: 2px;
+        background-image: url(../images/h3_bg.png);
+
+    }
+
+    h3.err {
+        border-bottom: none;
+    }
+
+    .row {
+        background-image: url() !important;
+        display: flex;
+        padding: 30px 30px 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include bp_small {
+            display: block;
+        }
+
+    }
+
+    .row:after {
+        content: "";
+        position: relative;
+        padding: 10px 20px 0;
+        width: calc((100% / 2) - 90px);
+    }
+
+    .col {
+        box-shadow: 1px 1px 5px #ccc;
+        border-radius: 5px;
+        padding-bottom: 40px;
+        width: calc((100% / 2) - 15px);
+        margin-bottom: 30px;
+        box-sizing: border-box;
+
+        @include bp_small {
+            width: 90%;
+            margin: 0 auto 30px;
+        }
+    }
+
+}
+
