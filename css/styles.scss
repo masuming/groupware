@@ -382,6 +382,17 @@
                 white-space: nowrap;
                 width: 75px;
             }
+            dl {
+                display: flex;
+                dt {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .buttons {
+        input[type=submit] {
+            background: $white-color;
         }
     }
 
@@ -403,6 +414,7 @@
 
     dl {
         margin-bottom: 10px;
+        display: flex;
 
         &:last-of-type {
             margin-bottom: 10px;
@@ -412,6 +424,7 @@
     dl dt {
         width: 100px;
         text-align: right;
+        font-weight: 600;
     }
 
     dl dd {
