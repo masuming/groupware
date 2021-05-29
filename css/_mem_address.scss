@@ -1,0 +1,124 @@
+/*////////////////////////////////////////////
+// mem address
+////////////////////////////////////////////*/
+#mem_add_list {
+    h3 {
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        font-size: 1em;
+        padding-bottom: 20px;
+        margin-bottom: 5px;
+    }
+
+    .col {
+        background-color: rgba(244, 244, 244, 0.9);
+        padding: 30px;
+        border-radius: 6px;
+        margin: 0 auto 30px;
+
+        dl {
+            display: flex;
+            margin: 0 auto 10px;
+
+        }
+
+        dl dt {
+            font-weight: 600;
+            width: 120px;
+        }
+
+        dl dd {
+            padding-left: 5px;
+        }
+    }
+
+    .sec__02:first-of-type {
+
+        h5 {
+            margin-bottom: 15px;
+            padding: 8px 0;
+            font-size: 1.1em;
+            border-bottom: 2px dashed $white-color;
+            background-image: url();
+        }
+
+        .row1 {
+            background-color: rgba(244, 244, 244, 0.9);
+            padding: 0 30px 20px;
+            border-radius: 6px;
+            margin: 0 auto 30px;
+
+            .col1 {
+                display: flex;
+
+                dl dd p {
+                    font-size: 0.8em;
+                    padding-top: 5px;
+                }
+            }
+
+        }
+
+        dl {
+            position: relative;
+            background-color: $white-color;
+            border-radius: 6px;
+            padding: 10px 15px;
+            max-width: 100px;
+            min-width: 100px;
+            margin: 0 5px;
+
+
+            @media screen and (max-width:1111px) {
+                width: calc((100% / 4) - 30px);
+       
+            }
+
+            @media screen and (max-width:850px) {
+                width: calc((100% / 3) - 30px);           
+            }
+
+            @media screen and (max-width:567px) {
+                width: calc((100% / 2) - 30px);   
+
+            }
+
+            @media screen and (max-width:350px) {
+                width: 100%;
+                max-width: 250px;
+
+            }
+        }
+
+        dl dt {
+            position: relative;
+            overflow: hidden;
+        }
+
+        dl dt img {
+            height: 80px;
+            @include align-center;
+            position: relative;
+        }
+
+        dl dd {
+            text-align: center;
+        }
+
+        dl dd p {
+            font-size: 0.9em;
+        }
+
+        dl dd p:first-child {
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+
+    }
+
+
+}
+
