@@ -1,0 +1,64 @@
+/*////////////////////////////////////////////
+// mem new regist
+////////////////////////////////////////////*/
+body.new {
+    .row {
+        background-image: url(../images/h3_bg.png) !important;
+        background-position: top left !important;
+        background-repeat: repeat-x !important;
+        background-size: auto !important;
+    }
+    .newrow {
+        background-image: url(../images/welcome.png), url(../images/h3_bg.png) !important;
+        background-position: right bottom, top left !important;
+        background-repeat: no-repeat, repeat-x !important;
+        background-size: 40%, auto !important;
+    }
+    h3 {
+        text-align: center;
+        margin-bottom: 40px !important;
+        background-image: url();
+    }
+    h4 {
+        font-size: 1em !important;
+        color: $text-color !important;
+        line-height: 1.5;
+        padding-bottom: 20px;
+        font-weight: 300;
+    }
+    section.sec__02 .col {
+        width: calc(100% - 200px);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    form {
+        width: calc(100% - 200px);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #avatar {
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+        dt {
+            width: 100%;
+            margin-right: 0;
+            figure {
+                margin: 0 auto;
+            }
+        }
+        dd {
+            text-align: center;
+            padding-top: 10px;
+            input {
+                border: none;
+            }
+        }
+    }
+    form dl dt {
+        width: 120px;
+    }
+    .res400 {
+        display: none;
+    }
+}
