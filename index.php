@@ -30,8 +30,9 @@
         <p><a href="mem/new_mem.php">会員登録する</a></p>
         <p><small><a href=""><i class="far fa-question-circle"></i>ログインIDを忘れた？</a></small></p>
         <p><small><a href=""><i class="fas fa-question-circle"></i>パスワードを忘れた？</a></small></p>
+        <p><small><a href="mem/about.php"><i class="far fa-hand-point-up"></i>当サイトについて</a></small></p>
         </div>   
-            
+
     </main>
         
 
